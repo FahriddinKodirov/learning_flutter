@@ -45,8 +45,17 @@ dependencies:
   video_player: ^2.6.1
   camera: ^0.10.5
   path: ^1.8.2
+  fluttertoast: ^8.2.1
 
   flutter_localization: ^0.1.10
+  in_app_review: ^2.0.6
+  community_material_icon: ^5.9.55
+  chat_gpt_sdk: ^2.0.6
+  tuple: ^2.0.0
+  youtube_player_iframe: ^4.0.1
+  flutter_riverpod: ^2.0.2
+  material_buttonx: ^2.0.3
+  share_plus: ^7.0.0
 
   go_router: ^7.0.0
   window_size:
