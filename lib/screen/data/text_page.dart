@@ -10,7 +10,7 @@ class TextPage extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-        const Center(child: const Text('messages:')),
+        const Center(child: Text('messages:')),
         for (var m in messages)
            Text(m)
       ],),

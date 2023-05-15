@@ -1,30 +1,43 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:learning_flutter/saved_app/main_saved.dart';
-import 'package:learning_flutter/screen/market/animation/animation/a.dart';
-import 'package:learning_flutter/screen/market/animation/animation/home_screen_fourth_page.dart';
-import 'package:learning_flutter/screen/market/animation/animation/home_screen_page.dart';
-import 'package:learning_flutter/screen/market/animation/animation/bottom_navigation_bar_three_page.dart';
-import 'package:learning_flutter/screen/market/animation/animation/bottom_navigation_bar_two_age.dart';
-import 'package:learning_flutter/screen/market/animation/animation/bottom_navigation_bar.dart';
-import 'package:learning_flutter/screen/market/animation/animation/drawer_age.dart';
-import 'package:learning_flutter/screen/market/animation/animation/home_screen_second_page.dart';
-import 'package:learning_flutter/screen/market/animation/animation/page_animated_page.dart';
-import 'package:learning_flutter/screen/market/animation/animation/animated_cros_fade_page.dart';
-import 'package:learning_flutter/screen/market/animation/animation/on_off_button.dart';
-import 'package:learning_flutter/screen/market/animation/animation/tapped_page.dart';
-import 'package:learning_flutter/screen/market/animation/animation/switch_animation_page.dart';
-import 'package:learning_flutter/screen/market/animation/animation/drag_it_page.dart';
-import 'package:learning_flutter/screen/market/animation/animation/physics_page.dart';
-import 'package:learning_flutter/screen/market/animation/animation/tap_to_view_more.dart';
-import 'package:learning_flutter/screen/market/animation/animation/slider.dart';
+import 'package:learning_flutter/screen/market/animation/animation/favorite_animation_page.dart';
+import 'package:learning_flutter/screen/market/animation/animation/navigator_animation_second_page.dart';
+import 'package:learning_flutter/screen/market/animation/animation/navigator_animation_page.dart';
+import 'package:learning_flutter/screen/market/animation/animation/button_animation_second_page.dart';
+import 'package:learning_flutter/screen/market/animation/animation/button_animation_page.dart';
+import 'package:learning_flutter/screen/market/animation/animation/fade_animation_page.dart';
+import 'package:learning_flutter/screen/market/animation/animation/indicator_button_page.dart';
+import 'package:learning_flutter/screen/market/animation/animation/list_animation_second_page.dart';
+import 'package:learning_flutter/screen/market/animation/animation/list_animation_page.dart';
+import 'package:learning_flutter/screen/market/animation/animation/background_animation_second_page.dart';
+import 'package:learning_flutter/screen/market/animation/animation/background_animation_page.dart';
+import 'package:learning_flutter/screen/market/animation/animation/circular_particle_screen2.dart';
+import 'package:learning_flutter/screen/market/animation/animation/text_animation_fourth_page.dart';
+import 'package:learning_flutter/screen/market/animation/animation/text_animation_third_page.dart';
+import 'package:learning_flutter/screen/market/animation/animation/text_animation_second_page.dart';
+import 'package:learning_flutter/screen/market/animation/animation/text_animation_page.dart';
+import 'package:learning_flutter/screen/market/animation/animation/splash_animation_second_page.dart';
+import 'package:learning_flutter/screen/market/animation/animation/splash_animation_page.dart';
+import 'package:learning_flutter/screen/market/animation/animation/indicator_page.dart';
+import 'package:learning_flutter/screen/market/animation/animation/circle_indicator_page.dart';
+import 'package:learning_flutter/screen/market/apple/home/home/home_app.dart';
 import 'package:learning_flutter/screen/market/effect/navigator_rail.dart';
-import 'package:learning_flutter/screen/market/flutter_catalog/chat.dart';
-import 'package:learning_flutter/screen/market/flutter_catalog/youtube_player.dart';
+import 'package:learning_flutter/screen/tab_box/tab_box.dart';
 import 'package:provider/provider.dart';
 
 void main() {
   setupWindow();
   runApp(const MyApp());
+
+
+// animation IndicatorPage
+   SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+    ),
+  );
+
 }
 
 class MyApp extends StatelessWidget {
@@ -35,12 +48,13 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => MyAppState(),
       child: MaterialApp(
+        
         debugShowCheckedModeBanner: false,
         title: 'Namer App',
         theme: ThemeData(
 
         ),
-        home:  MyCustomUI()
+        home:   TabBarPage()
       ),
     );
   }

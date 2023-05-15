@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class BottomNavigationBarPage extends StatefulWidget {
+  const BottomNavigationBarPage({super.key});
+
   @override
   BottomNavigationBarPageState createState() => BottomNavigationBarPageState();
 }
