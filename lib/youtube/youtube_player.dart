@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
 class YoutubePlayerExample extends StatefulWidget {
-  const YoutubePlayerExample({super.key});
+  final String yuotubeUrl;
+
+  const YoutubePlayerExample({super.key, required this.yuotubeUrl});
 
   @override
   State<YoutubePlayerExample> createState() => _YoutubePlayerExampleState();
@@ -19,7 +21,7 @@ class _YoutubePlayerExampleState extends State<YoutubePlayerExample> {
   @override
   void initState() {
     super.initState();
-    _txtController.text = 'https://www.youtube.com/watch?v=jfKfPfyJRdk';
+    _txtController.text = widget.yuotubeUrl;
   }
 
   String? _getVideoId() {

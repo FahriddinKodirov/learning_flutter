@@ -24,6 +24,7 @@ import 'package:learning_flutter/screen/market/animation/animation/circle_indica
 import 'package:learning_flutter/screen/market/apple/home/home/home_app.dart';
 import 'package:learning_flutter/screen/market/effect/navigator_rail.dart';
 import 'package:learning_flutter/screen/tab_box/tab_box.dart';
+import 'package:learning_flutter/youtube/youtube_page.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -54,7 +55,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
 
         ),
-        home:   TabBarPage()
+        home:   DemoApp()
       ),
     );
   }
